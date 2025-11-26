@@ -1,16 +1,16 @@
 function SomarTabuada() {
-    let num = document.getElementById('num').value;
-    let seltab = document.getElementById('seltab');
-    seltab.innerHTML = '';
+    let num = document.getElementById('num').value
+    let seltab = document.getElementById('seltab')
+    seltab.innerHTML = ''
     if (num.length == 0) {
-        alert('Por favor, digite um número!');
+        alert('Por favor, digite um número!')
     } else {
-        let n = Number(num);
+        let n = Number(num)
         for (let i = 1; i <= 10; i++) {
             let item = document.createElement('option');// Cria um elemento option
             item.text = `${n} + ${i} = ${n + i}`;// Texto exibido no item
-            item.value = `tab${i}`; // Valor usado para identificar o item
-            seltab.appendChild(item); // Adiciona o item à lista
+            item.value = `tab${i}` // Valor usado para identificar o item
+            seltab.appendChild(item) // Adiciona o item à lista
         }
     }
 }
