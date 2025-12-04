@@ -24,7 +24,7 @@ function SubtrairTabuada() {
     let seltab = document.querySelector('select#seltab')
     seltab.innerHTML = ''
     if (num.length == 0) {
-        alert('Por favor, digite um número!');
+        alert('Por favor, digite um número!')
     } else {
         let n = Number(num)
         let cont = n+1
